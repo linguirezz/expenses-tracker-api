@@ -6,11 +6,11 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const bcrypt = require('bcrypt');
 const morgan = require('morgan');
-const functions = require('firebase-functions')
+
 
 // database 
 const pool= require('./database/pool')
-const { error } = require('console')
+
 //use middleware
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -34,4 +34,4 @@ app.use((err, req, res, next) => {
 app.listen(PORT,()=>{
     console.log(`server is running on port ${PORT}`)
 })
-exports.api = functions.https.onRequest(app)
+
