@@ -1,0 +1,17 @@
+# POST http://localhost:3150/auth/login
+# Content-Type: application/json
+
+# {      
+#     "email": "alinuriman000@gmail.com",
+#     "password":"uminali123"
+# }
+# GET http://localhost:3150/dashboard/
+# token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDRhYWQzLTNmYzAtNDNjZi1hZGJjLWRlZTY3MmIxMjg3YyIsImlhdCI6MTcyMjUyNjI5OCwiZXhwIjoxNzIyNTI5ODk4fQ.wjnK3lhm0oH6rFRlNygtaX-kpoJRP9vuwMO3w6dzStQ
+POST http://localhost:3150/dashboard/add
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDRhYWQzLTNmYzAtNDNjZi1hZGJjLWRlZTY3MmIxMjg3YyIsImlhdCI6MTcyMjUyNjI5OCwiZXhwIjoxNzIyNTI5ODk4fQ.wjnK3lhm0oH6rFRlNygtaX-kpoJRP9vuwMO3w6dzStQ
+Content-Type: application/json
+
+{      
+    "description": "memasak sayur lodeh",
+    "amount":100
+}
