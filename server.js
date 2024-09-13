@@ -15,7 +15,9 @@ const pool= require('./database/pool')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(morgan('dev'))
-app.use(cors())
+app.use(cors({
+  origin: 'https://expenses-tracker-30775.firebaseapp.com'
+}));
 // middlware
 app.get('/',(req,res)=>{
     res.send('anda berhasil masuk')
