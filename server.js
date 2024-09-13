@@ -16,7 +16,10 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(morgan('dev'))
 app.use(cors({
-  origin: 'https://expenses-tracker-30775.firebaseapp.com'
+  origin: 'https://expenses-tracker-30775.firebaseapp.com', // Ganti dengan domain Anda
+  methods: 'GET,POST,PUT,DELETE',
+  allowedHeaders: 'Content-Type, Authorization',
+  credentials: true
 }));
 // middlware
 app.get('/',(req,res)=>{
