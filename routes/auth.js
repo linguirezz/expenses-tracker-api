@@ -22,7 +22,7 @@ const hashedPassword = await bcrypt.hash(password,salt)
 
 // // todo : save user
 const newUser = await pool.query(
-    'INSERT INTO users (name, email, password) VALUES($1,$2,$3) RETURNING *',[username,email,hashedPassword]
+    'INSERT INTO users (username, email, password) VALUES($1,$2,$3) RETURNING *',[username,email,hashedPassword]
 ) 
 
 // // todo : respon with jwt user
