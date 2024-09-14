@@ -9,7 +9,7 @@ function jwtGenerator(user_id) {
     const payload = {
         id: user_id
     };
-    const token = jwt.sign(payload, process.env.SECRET, { expiresIn: '1h' });
+    const token = jwt.sign(payload, "enaumiBIali897_@", { expiresIn: '1h' });
     return token;
 }
 
