@@ -1,5 +1,5 @@
-require('dotenv').config()
-const jwt = require('jsonwebtoken')
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 // JWT GENERATOR
 // ? how it can be secure ? 
 
