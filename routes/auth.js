@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt')
 const authentification = require('../utils/authentication')
 // halaman register
 router.post('/register',async(req,res)=>{
-//! todo : destructured
+
 const {username,email,password}=req.body
 
 

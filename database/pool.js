@@ -17,8 +17,10 @@ async function createTable() {
         email VARCHAR(100) UNIQUE NOT NULL,
         password TEXT NOT NULL
       );
+      INSERT INTO users (username, email, password) VALUES ('admin', 'admin000@gmail.com', 'admin123'); 
     `;
     await client.query(createTableQuery);
+    
     console.log('Table created successfully');
   } catch (err) {
     console.error('Error creating table', err);
